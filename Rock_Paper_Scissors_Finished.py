@@ -9,7 +9,7 @@ playing = True
 win = "You Win!!! :) :)"
 lose = "You Lose!!! :( :("
 tie = "Tied so sad. :("
-outcome = None
+outcome = tie
 
 #Looping the game
 while playing:
@@ -50,7 +50,7 @@ while playing:
             outcome = lose
             print(outcome)
     
-    else:
+    elif outcome == tie:
 
     #Not allowing the player to type anything else
         while player not in pick:
