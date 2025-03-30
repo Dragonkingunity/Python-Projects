@@ -33,7 +33,7 @@ print('The match ups are below learn them.', '\nMagic > Strength \nStrength > Ra
 print('Your starting stats are as follows', f'\nStrength: {strength_stat}\nMagic: {magic_stat}\nRanged: {ranged_stat}\n')
 
 while playing:
-    stat_choice = None
+    stat_choice = "None"
     fight_choice = None
 
     print('These are the enemy stats.', f'\nMage stats: {mage_power}\nFighter stats: {fighter_power}\nRanger stats: {ranger_power}')
@@ -48,9 +48,21 @@ while playing:
 
     #print(fight_choice)
 
+   #def ranger_fight ():
     if fight_choice == 'Ranger' and stat_choice == 'Strength':
         fight = strength_stat - ranger_power
         print(fight)
+    #def fighter_fight ():
+    elif fight_choice == 'Fighter' and stat_choice == 'Magic':
+        pass
+    #def mage_fight ():
+    elif fight_choice == 'Mage' and stat_choice == 'Ranged':
+        pass
+
+
+
+
+
 
 
 
