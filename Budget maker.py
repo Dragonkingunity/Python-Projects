@@ -1,7 +1,7 @@
 base_income = float(input('how much you make a month?\n'))
 food = float(input('How much do you spend on food a month\n'))
-important_bills_cost = {544.4, 240.33, 60, 90}
-nonimportant_bills_cost = {16.04, 12.82, 14.97}
+important_bills_cost = {544.4, 240.33, 60, 40, 400, 45, 12, 100}
+nonimportant_bills_cost = {16.04}
 savings = float(input('How much do you want to save?\n'))
 bill_number = 0
 
@@ -38,10 +38,10 @@ with open("budget.txt", "a") as file:
 with open("budget.txt", "a") as file:
     file.write("Income left: " + str(income) + "\n")
 
-for bill in nonimportant_bills_cost:
+for n_bill in nonimportant_bills_cost:
     bill_number += 1
     income = income - bill
-    print(f"This is what you have left after {bill_number}: {bill}, {income}", "\n")
+    print(f"This is what you have left after {bill_number}: {n_bill}, {income}", "\n")
 
     with open("budget.txt", "a") as file:
         file.write("Non Imporant bills: " + str(bill) + "\n")
